@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cimory Dairyland</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="img/logo.png" style="margin: 0px 0 0 0; width:45px;height:50px; scale: 2.4;" />
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#aboutus">About Us</a>
+            <a href="#information">Information</a>
+            <a href="#activities">Activities</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="background1">
+      <div id="slideshow">
+        <div class="slide-wrapper">
+          <div class="slide">
+          </div>
+          <div class="slide">
+          </div>
+          <div class="slide">
+          </div>
+          <div class="slide">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutus" class="aboutus">
+      <div class="bg">
+      </div>
+      <div class="abt-text">
+        <h3>About Us</h3>
+      </div>
+        <div class="abt-text2">
+          <div class="abt-box">
+            <p>Cimory Dairyland dikelola oleh PT Cisarua Mountain Dairy (Cimory).
+              Cimory Dairyland puncak dibuka sejak 1 Mei 2021, 
+              berlokasi di Megamendung, Bogor,Jawa Barat. Merupakan tempat 
+              yang mengusung konsep leisure park yang menjadikan tempat 
+              ini cocok sebagai tempat rekreasi keluarga. </p>
+        </div>
+      </div>
+      <div class="icons">
+        <div class="box-icon">
+          <img src="img/icon1.png" alt="">
+        </div>
+        <div class="box-icon">
+          <img src="img/icon2.png" alt="">
+        </div>
+        <div class="box-icon">
+          <img src="img/icon3.png" alt="">
+        </div>
+        <div class="box-icon">
+          <img src="img/icon4.png" alt="">
+        </div>
+      </div>
+      <center><div class="straightline"></div></center>
+
+    </section>
+      
+    <section id="information" class="information">
+      
+        <h3>Information</h3>
+        <div class="wrapped-info1">
+        <div class="infos">
+          <div class="box-info">
+            <img src="img/weekday.png" alt="">
+          </div>
+         <div class="box-info">
+            <img src="img/weekend.png" alt="">
+          </div>
+      </div>
+
+      <div class="infos-text">
+        <div class="box-text-info">
+          <div class="oph">
+            <h4>Operational Hour:</h4>
+            <p>08.00 - 17.00</p>
+            <h5>Entry Fee Dairyland: 30k</h5>
+            <h5>Entry Fee Magic Village: 20k</h5>
+            <h5>Combo Package: 45k</h5>
+
+          </div> 
+        
+        </div>
+       <div class="box-text-info">
+        <div class="oph">
+          <h4>Operational Hour:</h4>
+          <p>08.00 - 17.00</p>
+            <h5>Entry Fee Dairyland: 40k</h5>
+            <h5>Entry Fee Magic Village: 30k</h5>
+            <h5>Combo Package: 65k</h5>
+        </div>
+
+        </div>
+      </div> 
+    </div> 
+    </section>
+
+    
+    
+    <section id="activities" class="activities">
+      <div class="allact">
+        <h1><br>Activites</h1>
+      
+      <div class="activity-box">
+        <div class="box">
+          <div class="act-pict">
+              <img src="img/act1.webp" alt="Magic Village">
+          </div>
+          <div class="act-text">
+            <h2>Magic Village</h2>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam ad assumenda quis sed, 
+              error a minima dolorum alias totam ut aliquam, 
+              porro atque nemo dicta asperiores esse quidem quas! Delectus!</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="act-pict">
+            <img src="img/act2.webp" alt="Cow Milking">
+        </div>
+        <div class="act-text">
+          <h2>Cow Milking</h2>
+          <br>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam ad assumenda quis sed, 
+            error a minima dolorum alias totam ut aliquam, 
+            porro atque nemo dicta asperiores esse quidem quas! Delectus!</p>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="act-pict">
+            <img src="img/act3.jpg" alt="Cow Milking">
+        </div>
+        <div class="act-text">
+          <h2>Horse Riding</h2>
+          <br>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam ad assumenda quis sed, 
+            error a minima dolorum alias totam ut aliquam, 
+            porro atque nemo dicta asperiores esse quidem quas! Delectus!</p>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="act-pict">
+            <img src="img/act4.jpg" alt="Cow Milking">
+        </div>
+        <div class="act-text">
+          <h2>Tractor Tour de Farm</h2>
+          <br>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam ad assumenda quis sed, 
+            error a minima dolorum alias totam ut aliquam, 
+            porro atque nemo dicta asperiores esse quidem quas! Delectus!</p>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="act-pict">
+            <img src="img/act5.jpg" alt="De Windmills">
+        </div>
+        <div class="act-text">
+          <h2>De Windmills</h2>
+          <br>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam ad assumenda quis sed, 
+            error a minima dolorum alias totam ut aliquam, 
+            porro atque nemo dicta asperiores esse quidem quas! Delectus!</p>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="act-pict">
+            <img src="img/act6.webp" alt="Cow Milking">
+        </div>
+        <div class="act-text">
+          <h2>Animal Feeding</h2>
+          <br>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam ad assumenda quis sed, 
+            error a minima dolorum alias totam ut aliquam, 
+            porro atque nemo dicta asperiores esse quidem quas! Delectus!</p>
+        </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="contact" class="contact">Contact</section>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="container">
+          <div class="company-info">
+            <h3>Cimory Dairyland</h3>
+            <p>Your source for quality dairy products</p>
+          </div>
+          <div class="address-info">
+            <h4>Address</h4>
+            <p>Jl. Raya Cipayung KM 2, Cipayung, Bogor, Jawa Barat</p>
+          </div>
+          <div class="social-media">
+            <h4>Follow Us</h4>
+            <ul>
+              <li><a href="#" target="_blank">Facebook</a></li>
+              <li><a href="#" target="_blank">Twitter</a></li>
+              <li><a href="#" target="_blank">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>
+
+</html>

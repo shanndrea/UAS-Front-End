@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background: linear-gradient(135deg, rgba(0,113,200,1) 0%, rgba(39,58,151,1) 100%);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: rgba(255,255,255,.75);
+}
+
+
+.activity-box{
+  gap: 100px;
+  row-gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 200px;
+  transform: scale(0.9);
+  
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+  position: relative;
+  overflow: hidden;
+  width: 450px;
+  height: 330px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  margin-top: 40px;
+}
+
+.box1::before,
+.box2::before,
+.box3::before,
+.box4::before,
+.box5::before,
+.box6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  transition: transform 0.9s ease-in-out;
+}
+
+.box1:hover::before,
+.box2:hover::before,
+.box3:hover::before,
+.box4:hover::before,
+.box5:hover::before,
+.box6:hover::before{
+  transform: scale(1.1) ;
+}
+
+.box1::before {
+  background:linear-gradient(rgba(0, 0, 0, 0.4), 
+      rgba(19, 19, 19, 0.655)), url('img/act1.webp');
+  background-size: cover;
+}
+
+.box2::before{
+  background:linear-gradient(rgba(0, 0, 0, 0.4), 
+      rgba(19, 19, 19, 0.655)), url('img/act2.webp');
+  background-size: cover;
+}
+
+.box3::before{
+  background:linear-gradient(rgba(0, 0, 0, 0.4), 
+      rgba(19, 19, 19, 0.655)), url('img/act3.jpg');
+  background-size: cover;
+}
+
+.box4::before{
+  background:linear-gradient(rgba(0, 0, 0, 0.4), 
+      rgba(19, 19, 19, 0.655)), url('img/act4.JPG');
+  background-size: cover;
+}
+
+.box5::before{
+  background:linear-gradient(rgba(0, 0, 0, 0.4), 
+      rgba(19, 19, 19, 0.655)), url('img/act5.jpg');
+  background-size: cover;
+}
+
+.box6::before{
+  background:linear-gradient(rgba(0, 0, 0, 0.4), 
+      rgba(19, 19, 19, 0.655)), url('img/act6.webp');
+  background-size: cover;
+}
+
+.box{
+  text-shadow: 2px 2px 7px #000000;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #f0f0f0;
+}
+
+.box h2{
+  margin-left: 60px;
+  margin-right: 60px;
+  padding-top: 80px;
+  font-size: 30px;
+}
+
+.box p{
+  margin-top: -10px;
+  font-size: 20px;
+} 
+
+.box h5{
+  margin-top: 0px;
+  font-size: 22px;
+}
+
+.box h6{
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: large;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 200px 30px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    height: 100px;
+  }
+  
+  .container{
+    margin-top: -100px;
+  }
+  
+  .company-info h3 {
+    font-size: 24px;
+  }
+  
+  .address-info h4,
+  .social-media h4 {
+    margin-bottom: 20px;
+  }
+  
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-media li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .social-media a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  #slideshow {
+    overflow: hidden;
+    height: 900px;
+    width: 1600px;
+    margin: 0 auto;
+    }
+    
+    /* Style each of the sides 
+    with a fixed width and height */
+    .slide {
+    float: left;
+    height: 900px;
+    width: 1600px;
+    }
+    
+    /* Add animation to the slides */
+    .slide-wrapper {
+    
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(1600px * 4);
+    
+    /* Specify the animation with the
+    duration and speed */
+    animation: slide 10s ease infinite;
+    }
+    
+    /* Set the background color
+    of each of the slides */
+    .slide:nth-child(1) {
+    background-image: url(img/bg.png);
+    background-size: cover;
+    }
+    
+    .slide:nth-child(2) {
+    background-image: url(img/bg2.jfif);
+    background-size: cover;
+    }
+    
+    .slide:nth-child(3) {
+    background-image: url(img/bg3.png);
+    background-size: cover;
+    }
+    
+    .slide:nth-child(4) {
+    background-image: url(img/bg4.webp);
+    background-size: cover;
+    }
+    
+    /* Define the animation 
+    for the slideshow */
+    @keyframes slide {
+    
+    /* Calculate the margin-left for 
+    each of the slides */
+    20% {
+        margin-left: 0px;
+    }
+    
+    40% {
+        margin-left: calc(-1600px * 1);
+    }
+    
+    60% {
+        margin-left: calc(-1600px * 2);
+    }
+    
+    80% {
+        margin-left: calc(-1600px * 3);
+    }
+    }
+
+
+  
+  .activities{
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f0f0f0;
+  }
+  
+  .contact{
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #1f242d;
+      font-size: 100px;
+      color: #fff;
+      font-weight: 700;
+  }
+  
+  .aboutus{
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0 ;
+      font-size: 100px;
+      color: #fff;
+      font-weight: 700;
+  }
+  .bg {
+      background:linear-gradient(rgba(0, 0, 0, 0.0), 
+      rgb(237, 236, 236)), url('img/abt1.jpeg');
+      background-size: cover;
+      height: 330px;
+      display: cover;
+    }
+    
+  .allact{
+    background-color: #f0f0f0;
+  }
+  
+    .allact h1{
+    font-size: 52px;
+    margin-top: 0px;
+    margin-bottom: -220px;
+    text-align: center;
+    color: #333;
+  }
+
+  .aboutus h3{
+    font-size: 55px;
+    color: #333;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+
+  .abt-text2{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .abt-box p{
+    font-size: 18px;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    font-weight: lighter;
+  }
+
+  .abt-box{
+    
+    width: 750px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: linear-gradient(235deg, rgba(0,113,200,1) 0%, rgba(39,58,151,1) 100%);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+
+  }
+
+  .icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    transform: scale(0.9);
+  }
+  
+  .box-icon{
+    width: 100px;
+    height: 100px; 
+  }
+
+  .straightline{
+    margin-top:   100px;
+    width: 1000px;
+    height: 1px;
+    background-color: #333;
+  }
+
+  .information{
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    position: relative;
+  }
+
+  .allinfo{
+    padding-top: 100px;
+  }
+
+  .titleinfo h1{
+    font-size: 50px;
+    color: #333;
+  }
+
+  .wrapinfo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 100px;
+    padding: 10px 100px;
+  }
+
+  .cardinfo{
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: linear-gradient(135deg, rgba(0, 113, 200, 0.7) 0%,
+     rgba(39, 58, 151, 0.625) 100%);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    transition: 0.5s;
+    
+  }
+
+  .cardinfo:hover{
+    height: 400px;
+  }
+
+  .imginfo{
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    transition: 0.5s;
+    transform: scale(1.2);
+  }
+
+  .wrapinfo .cardinfo:hover .imginfo{
+    top: -100px;
+    scale: 0.8;
+    
+  }
+
+  .imginfo img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .wrapinfo .cardinfo:hover .imginfo img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .contentinfo{
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .wrapinfo .cardinfo:hover .contentinfo{
+    top: 130px;
+    height: 250px;
+  }
+
+  .contentinfo h2{
+    color: #f0f0f0;
+  }
+
+  .contentinfo h4{
+    margin-top: 10px;
+  }
+  .contentinfo h5{
+    text-align: left;
+    margin-left: 30px;
+    font-size: 17px;
+    margin-top: 10px;
+    font-weight:300;
+  }
+
+  .contentinfo p{
+    color: rgb(9, 88, 3);
+    font-weight: 1000;
+    margin: 10px;
+    font-size: 25px;
+  }
+
+  .contentinfo a{
+    position: relative;
+    top: 15px;
+    display: inline block;
+    padding: 12px 25px;
+    background: var(--clr);
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+
+  .titleinfo{
+    font-size: 50px;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
