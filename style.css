@@ -45,7 +45,7 @@ nav a.active {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 200px;
-  transform: scale(0.9);
+  transform: scale(0.8);
   
 }
 
@@ -214,27 +214,18 @@ footer {
     width: 1600px;
     }
     
-    /* Add animation to the slides */
     .slide-wrapper {
-    
-    /* Calculate the total width on the
-    basis of number of slides */
     width: calc(1600px * 4);
-    
-    /* Specify the animation with the
-    duration and speed */
     animation: slide 10s ease infinite;
     }
     
-    /* Set the background color
-    of each of the slides */
     .slide:nth-child(1) {
     background-image: url(img/bg.png);
     background-size: cover;
     }
     
     .slide:nth-child(2) {
-    background-image: url(img/bg2.jfif);
+    background-image: url(img/bg2.webp);
     background-size: cover;
     }
     
@@ -248,12 +239,8 @@ footer {
     background-size: cover;
     }
     
-    /* Define the animation 
-    for the slideshow */
+
     @keyframes slide {
-    
-    /* Calculate the margin-left for 
-    each of the slides */
     20% {
         margin-left: 0px;
     }
@@ -281,17 +268,141 @@ footer {
       background: #f0f0f0;
   }
   
-  .contact{
-      min-height: 100vh;
+  .reviews{
+      min-height: 80vh;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #1f242d;
-      font-size: 100px;
-      color: #fff;
-      font-weight: 700;
-  }
+      justify-content: space-between;
+      align-items: flex-start;
+      background: #cccccc;
+      font-size: 20px;
+      color: #333;
+      font-weight: 700; 
+      padding-top: 10%;
+}
   
+
+  .kotakkiri {
+    flex: 0 0 45%; /* Lebar kotak kiri */
+    margin-right: 20px; /* Jarak antara kotak kiri dan kanan */
+    padding-left: 10%;
+  }
+
+.kotakkanan {
+  flex-wrap: wrap;
+  width: 100%;
+  flex: 0 0 45%; /* Lebar kotak kanan */
+}
+
+
+
+.kotakkiri form {
+  display: flex;
+  flex-direction: column;
+}
+
+.kotakkiri label {
+  margin-bottom: 8px;
+}
+
+.kotakkiri input{
+  border-radius: 10px;
+  border: 0;
+}
+
+.kotakkiri input:hover{
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+.kotakkiri textarea {
+  height: 100px;
+  resize: vertical;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.kotakkiri textarea:hover{
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+.kotakkiri button {
+  width: 200px;
+  align-items: center;
+  border-radius: 15px;
+  justify-content: center;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.kotakkiri button:hover {
+  background-color: #45a049;
+}
+
+.kotakkanan ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.kotakkanan li {
+  margin-bottom: 10px;
+}
+
+.box-kanan{
+  background: #fff;
+  width: 450px;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-top: -20px;
+}
+
+.profile-img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-left: 20px;
+
+}
+
+.profile-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.box-top{
+  display: flex;
+  align-items: center;
+}
+
+.profile-name{
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name strong{
+  color: #3d3d3d;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  justify-content: left;
+}
+
+.review-text{
+  margin-left: 40px;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: justify;
+}
+
   .aboutus{
       min-height: 100vh;
       justify-content: center;
@@ -315,8 +426,8 @@ footer {
   
     .allact h1{
     font-size: 52px;
-    margin-top: 0px;
-    margin-bottom: -220px;
+    margin-top: 30px;
+    margin-bottom: -260px;
     text-align: center;
     color: #333;
   }
@@ -380,7 +491,7 @@ footer {
 
   .information{
     min-height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #cccccc;
     position: relative;
   }
 
@@ -479,6 +590,7 @@ footer {
 
   .contentinfo h4{
     margin-top: 10px;
+    color: #fff;
   }
   .contentinfo h5{
     text-align: left;
@@ -486,6 +598,7 @@ footer {
     font-size: 17px;
     margin-top: 10px;
     font-weight:300;
+    color: #fff;
   }
 
   .contentinfo p{

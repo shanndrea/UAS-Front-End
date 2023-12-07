@@ -16,3 +16,24 @@ window.onscroll = () => {
         };
     });
 };
+
+var app = angular.module('CommentApp', []);
+
+app.controller('CommentController', function($scope) {
+    $scope.comments = []; 
+    
+    $scope.newComment = { 
+        name: '',
+        message: ''
+    };
+    
+    $scope.submitComment = function() { 
+        var commentCopy = angular.copy($scope.newComment); 
+        $scope.comments.push(commentCopy); 
+        
+        $scope.newComment = { 
+            name: '',
+            message: ''
+        };
+    };
+});
